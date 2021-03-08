@@ -24,6 +24,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -41,6 +47,7 @@ a {
 .contacts-list-item-link {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
 }
@@ -223,9 +230,12 @@ a {
       rgba(47, 48, 58, 0.4)
     ),
     url("../img/hero-foto.jpg");
-
-  max-width: 1600px;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  background-repeat: no-repeat;
   text-align: center;
+  background-position: center;
 }
 
 .hero-title {
@@ -336,6 +346,9 @@ a {
 
 .works-img-thumb {
   position: relative;
+  height: auto;
+  display: block;
+  max-width: 100%;
 }
 
 .works-img-description {
@@ -398,6 +411,9 @@ a {
 }
 
 .team-img {
+  height: auto;
+  display: block;
+  max-width: 100%;
 }
 
 .team-member {
@@ -503,7 +519,7 @@ a {
 
 .clients-link:hover,
 .clients-link:focus {
-  border: solid var(--primery-blue);
+  border: 1px solid var(--primery-blue);
 }
 
 .clients-item:not(:first-child) {
