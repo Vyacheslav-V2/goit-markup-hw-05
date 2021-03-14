@@ -95,6 +95,7 @@ img {
 .modal-send-button {
   min-width: 200px;
   align-self: center;
+  margin-top: 30px;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -110,6 +111,31 @@ img {
 .modal-send-button:focus,
 .modal-send-button:hover {
   background-color: #188ce8;
+}
+
+.footer-send-button {
+  position: relative;
+  min-width: 200px;
+  margin-left: 12px;
+  padding: 10px 24px;
+  text-align: left;
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+  color: var(--primery-white);
+  background-color: var(--primery-blue);
+  border-radius: 4px;
+  border: 0;
+}
+
+.footer-send-button-icon {
+  position: absolute;
+  right: 28px;
+  top: 13px;
+  height: 24px;
+  width: 24px;
 }
 /*---HEADER---*/
 
@@ -669,6 +695,39 @@ img {
   fill: var(--primery-white);
 }
 
+.sign-in-conteiner {
+  padding-left: 93px;
+}
+
+.sign-in-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primery-white);
+}
+
+.footer-e-mail {
+width: 358px;
+height: 50px;
+padding-left: 16px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+background-color: #2F303A;
+border-radius: 4px;
+color: var(--primery-white);
+}
+
+.footer-e-mail::placeholder {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+
+
 /*---FOOTER END--*/
 
 /*----------------------------------------------STUDIO END------------------*/
@@ -894,7 +953,7 @@ input[type="radio"].visually-hidden {
   pointer-events: none;
 }
 
-.modsl-form {
+.modal-form {
   display: flex;
   flex-direction: column;
 }
@@ -944,12 +1003,14 @@ input[type="radio"].visually-hidden {
 .madal-input-wraper {
   display: block;
   position: relative;
+  padding-top: 4px;
 }
 
 .modal-comment {
   display: block;
   width: 100%;
   height: 120px;
+  margin-top: 4px;
   padding: 12px;
   font-weight: 400;
   font-size: 14px;
@@ -986,6 +1047,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-check-discription {
+  padding-top: 20px;
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -996,7 +1058,11 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-check:checked + .modal-check-discription::before {
-  background-image: url("../.img/icon-check.svg");
+  background-image: url("../img/icon-check.svg");
+  background-position: center;
+  height: 15px;
+  width: 15px;
+  border: none;
 }
 
 .modal-check:focus + .modal-check-discription::before {
@@ -1010,7 +1076,16 @@ input[type="radio"].visually-hidden {
   width: 15px;
   height: 15px;
   border: solid 2px #212121;
-  border-radius: 2px;
+  border-radius: 1px;
+}
+
+.modal-link {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+color: var(--primery-blue);
 }
 
 /*-----------------------------------MODAL END--------------------*/
